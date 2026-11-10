@@ -1,0 +1,64 @@
+à la jam 2 — sample credits
+
+piano/   Salamander Grand Piano V3 by Alexander Holm.
+         Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+         Source: https://archive.org/details/SalamanderGrandPianoV3
+         via npm @audio-samples/piano-mp3-velocity4, -velocity8, -velocity12 (packaging MIT).
+         Changes: notes A1..C7 every minor third, 3 velocity layers (v4, v8, v12), trimmed to 4.5–6 s
+         with a fade-out, +1.5 dB on every file (same for all), re-encoded 96 kbps stereo MP3.
+
+upright/ Upright (acoustic) double bass, pizzicato: VS Chamber Orchestra: Community Edition (VSCO 2 CE) by Versilian
+         Studios (recorded by Sam Gossner & Simon Dalzell; sample cutting by Elan Hickler/Soundemote).
+         Licence: CC0 1.0 (public domain). Source: https://github.com/sgossner/VSCO-2-CE (Strings/Solo Contrabass/Pizz).
+         Named here by the sounding pitch (VSCO names the note an octave lower). Used: 14 pitches E1..B3, two takes each,
+         the firmer touch (v3) where recorded (E1..E2), else v1. Changes: mono, started 2 ms before the onset, the open D and
+         F#2 given a little extra decay to match their neighbours, 2.4 s with a fade, every note set to the same loudness
+         (above 50 Hz), MP3 mono 112 kbps. Built by tools/build-upright.py; tuned take by take (tools/measure-tuning.py).
+
+bass/    Electric bass samples from tonejs-instruments (nbrosowsky/tonejs-instruments,
+         npm tonejs-instrument-bass-electric-mp3). Licence: MIT.
+         Changes: trimmed to 2.5 s with a fade-out, mono 96 kbps MP3.
+
+kit/     Drums (sticks): Virtuosity Drums by Versilian Studios (drummer Austin McMahon, recorded at Virtuosity
+         Musical Instruments, Boston). Licence: CC0 1.0 (public domain).
+         Source: https://github.com/sfzinstruments/virtuosity_drums
+         Used: ride (3 touches x 2), ride bell, flat ride (2 touches), hi-hat closed (2 x 2), pedal (2), open,
+         kick snares-off (2 x 2), snare centre (3 touches), cross-stick (2), shaker (3; from the kit's VSCO 2
+         percussion). Changes: "mid" stereo pair summed to mono (kick and snare with their close mic mixed in),
+         started 2 ms before the onset, trimmed with a fade, every touch set to the same loudness, MP3 mono 112-128 kbps.
+
+         Brushes: Swirly Drums by Karoryfer Samples. Licence: CC0 1.0 (public domain).
+         Source: https://github.com/sfzinstruments/karoryfer.swirly-drums
+         Used: brush snare hits (3 touches x 2, top + bottom mics), two slices of the brush stir (swish).
+         Same changes as above.
+
+vibraphone/  Soft-mallet vibraphone from VCSL (Versilian Community Sample Library) by Versilian Studios / Sam Gossner.
+         Licence: CC0 1.0 (public domain). Source: https://github.com/sgossner/vcsl
+         (Idiophones/Struck Idiophones/Vibraphone/Soft Mallets). Named here by the sounding pitch (VCSL names the
+         written note, an octave lower). Changes: mono, trimmed to 4-6 s with a fade, each touch layer set to the
+         same loudness, MP3 mono 96 kbps. Built by tools/build-kit.py.
+
+The electric piano ("vibes") and the fallback brushes, rim and shaker (heard only until the recordings load) are
+synthesised in code (src/audio/instruments.js). The room reverb impulse is generated in code (src/audio/engine.js).
+
+kit/ (hand percussion)  Claps, tambourine (hit and shake), bongos (open, muted, low), congas (open, muted), tumba,
+         a mallet tom and a gong, from VCSL (Versilian Community Sample Library) by Versilian Studios / Sam Gossner.
+         Licence: CC0 1.0 (public domain). Source: https://github.com/sgossner/vcsl
+         (Idiophones/Struck Idiophones: Claps, Tambourine 1 and 2, Gong 1; Membranophones/Struck Membranophones: Bongos,
+         Conga, Tom 1). Changes: mono, started 2 ms before the onset, trimmed with a fade, each touch set to the same
+         loudness, MP3 mono 96-112 kbps. Built by tools/build-perc.py.
+
+sax/     Tenor saxophone (Brett's tenor, no vibrato, two touches) from VCSL by Versilian Studios.
+         Licence: CC0 1.0 (public domain). Source: https://github.com/sgossner/vcsl
+         (Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato). Named here by the sounding pitch. Changes: mono,
+         resampled to 44.1 kHz, 5 s with a fade, each touch set to the same loudness, MP3 mono 112 kbps.
+         Built by tools/build-perc.py; tuned per file (tools/measure-tuning.py).
+
+choir/   "Voice oohs" and "choir aahs" from the FluidR3_GM SoundFont by Frank Wen, as rendered to MP3 in
+         midi-js-soundfonts by Benjamin Gleitzman. Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/).
+         Source: https://github.com/gleitz/midi-js-soundfonts (FluidR3_GM/voice_oohs-mp3, choir_aahs-mp3).
+         Changes: a note every 3 semitones A2..A5, the steady middle stretched to 7 s by overlapping soft grains, a fade,
+         MP3 mono 96 kbps. On trial: the band uses the formant choir made in code until Henry chooses by ear.
+
+Made in code (no recordings): the Hammond B-3 organ and its Leslie, the organ pedals, the formant choir, the rhodes
+(electric piano) and the count-in sounds (src/audio/organ.js, instruments.js, count.js).
