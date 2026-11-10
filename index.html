@@ -190,6 +190,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .app[data-door="paint"] #paint{opacity:1}
 /* Paint: the sheet gets the room, the keys sit lower and smaller */
 @media (min-width:721px){.app[data-door="paint"]{--keysH:clamp(150px,24vh,240px)}}
+@media (max-width:720px){.paintplate{gap:2px 6px}.paintplate .paintchord{font-size:22px;margin-right:2px}.paintplate .word.small{font-size:13px;padding:2px 8px 5px}}
 :root{--cubeH:216px;--bevel:7px;--turnW:60px}
 .face{position:absolute;inset:0;display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-areas:"tabs stage lamps" "cube cube cube";gap:0 20px;align-content:end;
   overflow:hidden;padding:2px 0 8px}
