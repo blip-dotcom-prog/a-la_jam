@@ -61,4 +61,11 @@ choir/   "Voice oohs" and "choir aahs" from the FluidR3_GM SoundFont by Frank We
          MP3 mono 96 kbps. On trial: the band uses the formant choir made in code until Henry chooses by ear.
 
 Made in code (no recordings): the Hammond B-3 organ and its Leslie, the organ pedals, the formant choir, the rhodes
-(electric piano) and the count-in sounds (src/audio/organ.js, instruments.js, count.js).
+(electric piano), the wide pad and the count-in's hum, bell and sticks (src/audio/organ.js, instruments.js, voices.js,
+count.js).
+
+count/   The count-in's wood taps: the soft "wood_click" hits from VCSL (Versilian Community Sample Library) by Versilian
+         Studios / Sam Gossner, Idiophones/Struck Idiophones/Woodblock (wood_click_pp_rr1, wood_click_pp_rr2,
+         wood_click_mp). Licence: CC0 1.0 (public domain). Source: https://github.com/sgossner/vcsl
+         Changes: mono, started 2 ms before the onset, 0.35 s with a fade, all set to the same loudness over their first
+         40 ms, MP3 mono 96 kbps. Built by tools/build-wood.py. (The engine low-passes them at 2 kHz and plays them quietly.)
