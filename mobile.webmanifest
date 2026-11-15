@@ -11,8 +11,8 @@
     "minimal-ui"
   ],
   "orientation": "landscape",
-  "background_color": "#FBF9F4",
-  "theme_color": "#E7CB8C",
+  "background_color": "#3B1D47",
+  "theme_color": "#3B1D47",
   "lang": "en",
   "dir": "ltr",
   "categories": [
