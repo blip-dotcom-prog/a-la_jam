@@ -19,6 +19,15 @@ bass/    Electric bass samples from tonejs-instruments (nbrosowsky/tonejs-instru
          npm tonejs-instrument-bass-electric-mp3). Licence: MIT.
          Changes: trimmed to 2.5 s with a fade-out, mono 96 kbps MP3.
 
+warmbass/ The warm bass (Nov 14; on the public page since Nov 15): Black And Blue Basses by Karoryfer Samples, the "darkblack" bass, a
+         5-string (Washburn AB-95) played with the fingers, recorded from its neck pickup.
+         Licence: CC0 1.0 (public domain); the licence is in warmbass/LICENSE.txt.
+         Source: https://github.com/sfzinstruments/karoryfer.black-and-blue-basses (Samples/darkblack/reg).
+         Named here by the sounding pitch (Karoryfer names the note an octave higher: its "b1" sounds B0). Used: the plain
+         plucks, a note every minor third B0..G#3, three touches (p, mp, mf), two takes each. Changes: mono, started 2 ms
+         before the onset, 3 s with a 1 s fade, every file set to the same loudness (above 50 Hz), MP3 mono 112 kbps.
+         Built by tools/build-warmbass.py; tuned take by take (tools/measure-tuning.py).
+
 kit/     Drums (sticks): Virtuosity Drums by Versilian Studios (drummer Austin McMahon, recorded at Virtuosity
          Musical Instruments, Boston). Licence: CC0 1.0 (public domain).
          Source: https://github.com/sfzinstruments/virtuosity_drums
@@ -38,8 +47,20 @@ vibraphone/  Soft-mallet vibraphone from VCSL (Versilian Community Sample Librar
          written note, an octave lower). Changes: mono, trimmed to 4-6 s with a fade, each touch layer set to the
          same loudness, MP3 mono 96 kbps. Built by tools/build-kit.py.
 
+rhodes/  The sampled Rhodes (Nov 14; on the public page since Nov 15): jRhodes3d by Jeffrey Learman, his 1977 Rhodes Mark I Stage 73,
+         recorded from the harp connector. https://github.com/sfzinstruments/jlearman.jRhodes3d
+         Licence: the samples are CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/): credit Jeffrey Learman /
+         jRhodes3d; NON-COMMERCIAL use only. à la jam 2 is free and non-commercial. Any commercial use of the app with
+         these samples needs Jeffrey Learman's permission (he offers a licence: see the source's LICENSE).
+         Used: the mono set (jRhodes3d-mono), every 4th white key F1..C7, its five velocity layers as recorded (here l1
+         soft .. l5 hard; B4/E5 have four, A5 and up three). Changes: started 2 ms before the onset (the attack untouched),
+         cut to 8 s (F1..B3), 7 s (D4, F4), 6 s (B4) or 5 s (E5 and up; shorter where the recording is), with a 2 s fade,
+         every file set to the same loudness over its first half second, MP3 mono 96 kbps. Built by tools/build-rhodes.py;
+         tuned file by file (tools/measure-tuning.py).
+
 The electric piano ("vibes") and the fallback brushes, rim and shaker (heard only until the recordings load) are
-synthesised in code (src/audio/instruments.js). The room reverb impulse is generated in code (src/audio/engine.js).
+synthesised in code (src/audio/instruments.js). The room reverb impulse is generated in code (src/audio/engine.js; the
+club room and the Rhodes amp's spring, src/audio/club.js and rhodes.js: no recorded impulse is used).
 
 kit/ (hand percussion)  Claps, tambourine (hit and shake), bongos (open, muted, low), congas (open, muted), tumba,
          a mallet tom and a gong, from VCSL (Versilian Community Sample Library) by Versilian Studios / Sam Gossner.
