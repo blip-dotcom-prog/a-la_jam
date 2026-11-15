@@ -6,7 +6,7 @@
 //   fonts         the Google fonts, the same way (so the lettering stays when offline)
 //   never         the visit counter (gc.zgo.at, goatcounter), Oura and anything else that isn't ours: not cached, not
 //                 even touched (no respondWith, the browser fetches them itself)
-const VERSION = "a772984149";
+const VERSION = "a467c42c8e";
 const PAGES = ["./","index.html","manifest.webmanifest","mobile.webmanifest","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png","icons/favicon-32.png"];                       // e.g. ['./', 'index.html', 'manifest.webmanifest', 'icons/icon-192.png', …]
 const PAGE_CACHE = 'alajam-page-' + VERSION;  // a new build, a new jar: the old one is thrown away on activate
 const SAMPLE_CACHE = 'alajam-samples-1';       // kept across builds (stale-while-revalidate keeps it fresh)
@@ -41,7 +41,8 @@ self.addEventListener('fetch', e => {
 async function networkFirst(e) {
   const q = e.request, c = await caches.open(PAGE_CACHE);
   try {
-    const r = await Promise.race([fetch(q), new Promise((_, no) => setTimeout(() => no(new Error('slow')), 6000))]);
+    const r = await Promise.race([fetch(q.url, { cache: 'no-cache', credentials: 'same-origin' }),   // (no-cache: past the browser's own HTTP cache too, so a new build is never missed)
+      new Promise((_, no) => setTimeout(() => no(new Error('slow')), 6000))]);
     if (r && r.ok && r.type === 'basic') e.waitUntil(c.put(q.url.split('?')[0].split('#')[0], r.clone()).catch(() => null));
     return r;
   } catch (err) {
