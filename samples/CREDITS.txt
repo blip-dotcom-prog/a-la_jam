@@ -28,6 +28,15 @@ warmbass/ The warm bass (Nov 14; on the public page since Nov 15): Black And Blu
          before the onset, 3 s with a 1 s fade, every file set to the same loudness (above 50 Hz), MP3 mono 112 kbps.
          Built by tools/build-warmbass.py; tuned take by take (tools/measure-tuning.py).
 
+steel/   The steel (the test bench only, Nov 15, steel mode on Country): Black And Green Guitars by Karoryfer Samples,
+         the "green" guitar (a Gretsch Anniversary), its plain plucks ("twang", ord), the mf touch, take 1.
+         Licence: CC0 1.0 (public domain); the licence is in steel/LICENSE.txt.
+         Source: https://github.com/sfzinstruments/karoryfer.black-and-green-guitars (Samples/green/ord).
+         Named here by the sounding pitch (Karoryfer names the note an octave higher: its "e4" sounds E3). Used: a note
+         every minor third E2..C#6. Changes: mono, started 2 ms before the onset, 4.5 s with a 1.5 s fade, every file set
+         to the same loudness (above 80 Hz), MP3 mono 112 kbps. Built by tools/build-steel.py, which measures each file's
+         pitch into src/bench/steel-tuning.js. The steel's bar, pedals and swell are made in code (src/bench/steel.js).
+
 kit/     Drums (sticks): Virtuosity Drums by Versilian Studios (drummer Austin McMahon, recorded at Virtuosity
          Musical Instruments, Boston). Licence: CC0 1.0 (public domain).
          Source: https://github.com/sfzinstruments/virtuosity_drums
@@ -68,6 +77,11 @@ kit/ (hand percussion)  Claps, tambourine (hit and shake), bongos (open, muted, 
          (Idiophones/Struck Idiophones: Claps, Tambourine 1 and 2, Gong 1; Membranophones/Struck Membranophones: Bongos,
          Conga, Tom 1). Changes: mono, started 2 ms before the onset, trimmed with a fade, each touch set to the same
          loudness, MP3 mono 96-112 kbps. Built by tools/build-perc.py.
+         Lagoon's extras (side/tiki, Nov 15-16), also VCSL, CC0: guiro_v1_1/2 (Idiophones/Struck Idiophones/Guiro,
+         the medium and slow scrapes), rain_v1_1/2 (Membranophones/Other Membranophones/Ocean Drum, sustained rolls cut
+         to 8.5 s swells, 2.6 s in and 3.6 s out), timp_v1_1 (Membranophones/Struck Membranophones/Timpani 1, Hit v3
+         rr4, its C#3 drum turned down a half step to C3), swell_v1_1 (Idiophones/Struck Idiophones/Suspended Cymbal 1,
+         cresc 2 s, trimmed to 6 s). Changes: mono 44.1 kHz, trimmed with fades, peak-levelled, MP3 96 kbps (ffmpeg).
 
 sax/     Tenor saxophone (Brett's tenor, no vibrato, two touches) from VCSL by Versilian Studios.
          Licence: CC0 1.0 (public domain). Source: https://github.com/sgossner/vcsl
@@ -90,3 +104,12 @@ count/   The count-in's wood taps: the soft "wood_click" hits from VCSL (Versili
          wood_click_mp). Licence: CC0 1.0 (public domain). Source: https://github.com/sgossner/vcsl
          Changes: mono, started 2 ms before the onset, 0.35 s with a fade, all set to the same loudness over their first
          40 ms, MP3 mono 96 kbps. Built by tools/build-wood.py. (The engine low-passes them at 2 kHz and plays them quietly.)
+
+barisax/ The rat's baritone sax (Nov 15, side/rat-sax): Bear Sax by Karoryfer Samples (Karoryfer Lecolds), a 1926 Conn
+         baritone saxophone. Licence: CC0 1.0 (public domain); the licence is in barisax/LICENSE.txt.
+         Source: https://github.com/sfzinstruments/karoryfer.bear-sax (Samples).
+         Named here by the sounding pitch (Karoryfer names the note an octave and one lower: its "d1" sounds D2). Used: the
+         sub-tone (E2..E3, two takes), the soft and full sustains (Db2..G4), the tongued short notes (touch 3 of 4, two
+         takes), the growl (Db2..C#3, two takes), every whole tone, and the breath noise. Changes: started 4 ms before the
+         onset, cut to 3.4 s (short notes 0.62 s, growls 2.2 s) with a fade, every file of a kind set to the same loudness,
+         MP3 mono 96 kbps. Built by tools/build-barisax.py; tuned file by file (tools/barisax/measure-tuning.py).
