@@ -1,5 +1,9 @@
 à la jam 2 — sample credits
 
+Thank you to everyone below who recorded these sounds and shared them. In the app, "thanks" (at the foot of the desktop
+page, and under the "?" on the phone) opens this page. à la jam is free and non-commercial: the Rhodes (rhodes/) is
+CC BY-NC 4.0, so the app can't be sold or used commercially with it.
+
 piano/   Salamander Grand Piano V3 by Alexander Holm.
          Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
          Source: https://archive.org/details/SalamanderGrandPianoV3
@@ -28,7 +32,7 @@ warmbass/ The warm bass (Nov 14; on the public page since Nov 15): Black And Blu
          before the onset, 3 s with a 1 s fade, every file set to the same loudness (above 50 Hz), MP3 mono 112 kbps.
          Built by tools/build-warmbass.py; tuned take by take (tools/measure-tuning.py).
 
-steel/   The steel (the test bench only, Nov 15, steel mode on Country): Black And Green Guitars by Karoryfer Samples,
+steel/   The steel (Nov 15: steel mode on Country, and the Country Waltz): Black And Green Guitars by Karoryfer Samples,
          the "green" guitar (a Gretsch Anniversary), its plain plucks ("twang", ord), the mf touch, take 1.
          Licence: CC0 1.0 (public domain); the licence is in steel/LICENSE.txt.
          Source: https://github.com/sfzinstruments/karoryfer.black-and-green-guitars (Samples/green/ord).
@@ -105,7 +109,7 @@ count/   The count-in's wood taps: the soft "wood_click" hits from VCSL (Versili
          Changes: mono, started 2 ms before the onset, 0.35 s with a fade, all set to the same loudness over their first
          40 ms, MP3 mono 96 kbps. Built by tools/build-wood.py. (The engine low-passes them at 2 kHz and plays them quietly.)
 
-barisax/ The rat's baritone sax (Nov 15, side/rat-sax): Bear Sax by Karoryfer Samples (Karoryfer Lecolds), a 1926 Conn
+barisax/ The rat's baritone sax (Nov 15): Bear Sax by Karoryfer Samples (Karoryfer Lecolds), a 1926 Conn
          baritone saxophone. Licence: CC0 1.0 (public domain); the licence is in barisax/LICENSE.txt.
          Source: https://github.com/sfzinstruments/karoryfer.bear-sax (Samples).
          Named here by the sounding pitch (Karoryfer names the note an octave and one lower: its "d1" sounds D2). Used: the
