@@ -81,6 +81,11 @@ kit/ (hand percussion)  Claps, tambourine (hit and shake), bongos (open, muted, 
          (Idiophones/Struck Idiophones: Claps, Tambourine 1 and 2, Gong 1; Membranophones/Struck Membranophones: Bongos,
          Conga, Tom 1). Changes: mono, started 2 ms before the onset, trimmed with a fade, each touch set to the same
          loudness, MP3 mono 96-112 kbps. Built by tools/build-perc.py.
+         Lagoon's extras (side/tiki, Nov 15-16), also VCSL, CC0: guiro_v1_1/2 (Idiophones/Struck Idiophones/Guiro,
+         the medium and slow scrapes), rain_v1_1/2 (Membranophones/Other Membranophones/Ocean Drum, sustained rolls cut
+         to 8.5 s swells, 2.6 s in and 3.6 s out), timp_v1_1 (Membranophones/Struck Membranophones/Timpani 1, Hit v3
+         rr4, its C#3 drum turned down a half step to C3), swell_v1_1 (Idiophones/Struck Idiophones/Suspended Cymbal 1,
+         cresc 2 s, trimmed to 6 s). Changes: mono 44.1 kHz, trimmed with fades, peak-levelled, MP3 96 kbps (ffmpeg).
 
 sax/     Tenor saxophone (Brett's tenor, no vibrato, two touches) from VCSL by Versilian Studios.
          Licence: CC0 1.0 (public domain). Source: https://github.com/sgossner/vcsl
