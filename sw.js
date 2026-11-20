@@ -6,7 +6,7 @@
 //   fonts         the Google fonts, the same way (so the lettering stays when offline)
 //   never         the visit counter (gc.zgo.at, goatcounter), Oura and anything else that isn't ours: not cached, not
 //                 even touched (no respondWith, the browser fetches them itself)
-const VERSION = "fc4d0f5067";
+const VERSION = "3c7f5786da";
 const PAGES = ["./","index.html","manifest.webmanifest","mobile.webmanifest","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png","icons/favicon-32.png","icons/phone-touch-icon.png","icons/phone-192.png"];                       // e.g. ['./', 'index.html', 'manifest.webmanifest', 'icons/icon-192.png', …]
 const PAGE_CACHE = 'alajam-page-' + VERSION;  // a new build, a new jar: the old one is thrown away on activate
 const SAMPLE_CACHE = 'alajam-samples-1';       // kept across builds (stale-while-revalidate keeps it fresh)
