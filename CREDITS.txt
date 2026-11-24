@@ -37,9 +37,11 @@ steel/   The steel (Nov 15: steel mode on Country, and the Country Waltz): Black
          Licence: CC0 1.0 (public domain); the licence is in steel/LICENSE.txt.
          Source: https://github.com/sfzinstruments/karoryfer.black-and-green-guitars (Samples/green/ord).
          Named here by the sounding pitch (Karoryfer names the note an octave higher: its "e4" sounds E3). Used: a note
-         every minor third E2..C#6. Changes: mono, started 2 ms before the onset, 4.5 s with a 1.5 s fade, every file set
-         to the same loudness (above 80 Hz), MP3 mono 112 kbps. Built by tools/build-steel.py, which measures each file's
-         pitch into src/bench/steel-tuning.js. The steel's bar, pedals and swell are made in code (src/bench/steel.js).
+         every minor third E2..C#6. Changes: mono, started 2 ms before the onset; the pluck and body to 0.75 s, then a
+         seamless loop of the string's own sound from 0.3 s (its decay taken out, dark over 7 kHz), falling 1 dB a
+         second, 7 s with a 1.2 s fade (Nov 17: a steel's string rings on); every file set to the same loudness (above
+         80 Hz), MP3 mono 96 kbps. Built by tools/build-steel.py, which measures each file's pitch into
+         src/bench/steel-tuning.js. The steel's bar, pedals and swell are made in code (src/bench/steel.js).
 
 kit/     Drums (sticks): Virtuosity Drums by Versilian Studios (drummer Austin McMahon, recorded at Virtuosity
          Musical Instruments, Boston). Licence: CC0 1.0 (public domain).
@@ -117,3 +119,9 @@ barisax/ The rat's baritone sax (Nov 15): Bear Sax by Karoryfer Samples (Karoryf
          takes), the growl (Db2..C#3, two takes), every whole tone, and the breath noise. Changes: started 4 ms before the
          onset, cut to 3.4 s (short notes 0.62 s, growls 2.2 s) with a fade, every file of a kind set to the same loudness,
          MP3 mono 96 kbps. Built by tools/build-barisax.py; tuned file by file (tools/barisax/measure-tuning.py).
+         subc/ and pc/ (Nov 18): the sub-tone and the soft sustain with the breath taken out (a comb that keeps the
+         partials of each take's own pitch and lets the air between them 30 dB down; the start trimmed past the air before
+         the reed speaks, a 4 ms fade in). Built from sub/ and p/ by tools/barisax/clean-smoky.py.
+
+kit/sleigh_v1_1.mp3, kit/sleigh_v1_2.mp3  Sleigh bells (Holiday Soul, Nov 21): made in code for à la jam (nine small
+         inharmonic bells struck within a few milliseconds, and the pellets' rattle). No samples used; free to use.

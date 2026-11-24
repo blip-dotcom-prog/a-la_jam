@@ -122,3 +122,6 @@ barisax/ The rat's baritone sax (Nov 15): Bear Sax by Karoryfer Samples (Karoryf
          subc/ and pc/ (Nov 18): the sub-tone and the soft sustain with the breath taken out (a comb that keeps the
          partials of each take's own pitch and lets the air between them 30 dB down; the start trimmed past the air before
          the reed speaks, a 4 ms fade in). Built from sub/ and p/ by tools/barisax/clean-smoky.py.
+
+kit/sleigh_v1_1.mp3, kit/sleigh_v1_2.mp3  Sleigh bells (Holiday Soul, Nov 21): made in code for à la jam (nine small
+         inharmonic bells struck within a few milliseconds, and the pellets' rattle). No samples used; free to use.
