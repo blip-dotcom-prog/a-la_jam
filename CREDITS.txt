@@ -1,7 +1,7 @@
 à la jam 2 — sample credits
 
 Thank you to everyone below who recorded these sounds and shared them. In the app, "thanks" (at the foot of the desktop
-page, and under the "?" on the phone) opens this page. à la jam is free and non-commercial: the Rhodes (rhodes/) is
+page) and "credits" (under the "?" on the phone) open this. à la jam is free and non-commercial: the Rhodes (rhodes/) is
 CC BY-NC 4.0, so the app can't be sold or used commercially with it.
 
 piano/   Salamander Grand Piano V3 by Alexander Holm.
@@ -20,7 +20,9 @@ upright/ Upright (acoustic) double bass, pizzicato: VS Chamber Orchestra: Commun
          (above 50 Hz), MP3 mono 112 kbps. Built by tools/build-upright.py; tuned take by take (tools/measure-tuning.py).
 
 bass/    Electric bass samples from tonejs-instruments (nbrosowsky/tonejs-instruments,
-         npm tonejs-instrument-bass-electric-mp3). Licence: MIT.
+         npm tonejs-instrument-bass-electric-mp3) by Nicholaus P. Brosowsky. Licence: the samples are CC BY 3.0
+         (https://creativecommons.org/licenses/by/3.0/), as the project's README says; its code (and the npm package's
+         listing) is MIT. (Nov 24: this said MIT before, which is only the code's.)
          Changes: trimmed to 2.5 s with a fade-out, mono 96 kbps MP3.
 
 warmbass/ The warm bass (Nov 14; on the public page since Nov 15): Black And Blue Basses by Karoryfer Samples, the "darkblack" bass, a
