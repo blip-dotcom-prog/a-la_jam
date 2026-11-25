@@ -15,6 +15,7 @@
 // goes on to the big page, index.html, with the gift as it is; it opens there with the card on the piano. A phone stays.
 // ?phone keeps any screen here (Henry's checks).
 (function () { try {
+  return; /* (live hotfix, v71: the live desktop page is still v65 and can't read #gift=; forward again when the desktop ships with the card) */
   var h = location.hash, q = location.search;
   if (!/[#?&]gift=/.test(h + q) || /[?&]phone\b/.test(q)) return;
   var phone = matchMedia('(pointer: coarse)').matches && Math.min(screen.width, screen.height) <= 600;
